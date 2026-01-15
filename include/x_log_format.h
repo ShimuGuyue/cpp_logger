@@ -3,9 +3,9 @@
 
 #include <string>
 
-#include "log_fromat.h"
+#include "log_format.h"
 
-class XLogFormat : LogFromat
+class XLogFormat : public LogFormat
 {
 public:
     /**

@@ -1,12 +1,12 @@
 ﻿#pragma once
-// log_fromat.h
+// log_format.h
 
 #include <string>
 
 /**
- * @brief LogFromat 日志格式化接口类
+ * @brief LogFormat 日志格式化接口类
  */
-class LogFromat
+class LogFormat
 {
 public:
     /**
