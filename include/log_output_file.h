@@ -6,7 +6,7 @@
 
 #include "log_output.h"
 
-class LogOutputFile : LogOutput
+class LogOutputFile : public LogOutput
 {
 private:
     std::ofstream ofs_;

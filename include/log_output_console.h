@@ -5,7 +5,7 @@
 
 #include "log_output.h"
 
-class LogOutputConsole : LogOutput
+class LogOutputConsole : public LogOutput
 {
 public:
     /**

@@ -11,9 +11,12 @@ project ("cpp_logger")
 
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
-file(GLOB SOURCES "src/*.cpp")
-
-add_executable (test "test.cpp" ${SOURCES})
+add_executable (test
+	"test.cpp"
+	"src/x_log_format.cpp"
+	"src/log_output_console.cpp"
+	"src/log_output_file.cpp"
+	"src/logger.cpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET test PROPERTY CXX_STANDARD 20)
